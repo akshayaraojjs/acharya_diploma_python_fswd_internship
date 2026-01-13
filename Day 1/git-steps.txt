@@ -9,3 +9,35 @@ Step 1: Open Git bash from the working folder
 Step 2: git clone "repository link"
 
 It is going to clone or create a copy of remote repository(Github) the repository in the local system
+
+Step 3: Copy the files and paste in the newly cloned repository folder
+
+Step 4: Change the path from current folder to repository folder
+
+cd "repository name"
+
+Step 5: Check changes in the folder:
+
+git status
+
+2 color representation: green (staged files or known files)
+red(unstaged or untracked or new files)
+
+Step 6: Add fles: 
+git add filename
+
+or
+
+git add . (Add all the files)
+
+Step 7: Add a commit statement
+
+git commit -m "relevant message"
+
+Step 8: Push the local source to remote repository
+
+git push origin main
+
+origin is a tree
+
+main is a branch
