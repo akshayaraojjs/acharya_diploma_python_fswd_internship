@@ -1,0 +1,15 @@
+# list is represented by '[]'
+# This is a Comment in Python
+# This is 
+# a multiline
+# comment
+
+# Ctrl + Shift + ~ for Terminal
+
+# Ctrl + ? for commenting
+
+# To run: Open Terminal and run the python file like "Python file.py"
+
+# Shift + Alt + Top/Bottom Arrow Key: Clone or copying the selected lines
+
+# Alt + Z for word wrapping

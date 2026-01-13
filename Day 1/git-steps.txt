@@ -1,0 +1,11 @@
+Git is a Tool, GitHub is a Platform
+
+Make a new respository in GitHub
+
+Copy the created Repository link
+
+Step 1: Open Git bash from the working folder
+
+Step 2: git clone "repository link"
+
+It is going to clone or create a copy of remote repository(Github) the repository in the local system
