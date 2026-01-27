@@ -1,0 +1,12 @@
+C++ - OOPS - Object Oriented Programming Concept
+
+OOPs - Real World Entity
+
+Characterstics of OOPS:
+
+Class - Blueprint or Prototype
+Object - Instance or Copy of Class
+Encapsulation - Class + Object
+Data Abstraction - Show only necessary part and hide the sensitive part
+Inheritance - Passing the data from parent to child
+Polymorphism - Poly + Morphism - Multiple + Same Name differnt forms
