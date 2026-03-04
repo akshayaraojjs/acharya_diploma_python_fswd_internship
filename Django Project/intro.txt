@@ -1,0 +1,51 @@
+Django - Python Framework
+Django Architecture: MVT
+M - Model (DB)
+V - View (Logical or Backend)
+T - Template (Design or Frontend)
+
+pip install virtualenv - Installing the virtual environment package or library
+
+virtualenv venv313 or python -m virtualenv djangoEnv
+
+venv313\Scripts\activate
+
+pip install django==4.2
+
+pip install mysqlclient (connecting Django with MySQL DB)
+
+django-admin startproject project_name
+
+cd project_name
+
+python manage.py runserver
+
+http://127.0.0.1:8000
+
+http: Hyper Text Transfer Protocol (Request & Response)
+
+127.0.0.1 - Localhost
+
+8000 - Django Default Port Number
+
+By default, Django uses LocalDB - 
+
+Folder Structure:
+
+manage.py -- Controlling the entire django project
+
+settings.py -- Configuration purpose - DB & Mail
+
+routes or navigation links are written in urls.py
+
+logical part is written in views.py
+
+For making sub-application:
+
+python manage.py startapp app_name
+
+python manage.py makemigrations - Preparing the table db schema
+
+python manage.py migrate - Creation of table in DB
+
+models.py file is used to create the schema for our table

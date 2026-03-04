@@ -1,0 +1,50 @@
+Commands: 
+
+1) To create a new django project:
+
+django-admin startproject employee_app
+
+2) Navigate to project folder:
+
+cd employee_app
+
+3) Run the project:
+
+python manage.py runserver
+
+4) Stop the server: Ctrl + C
+
+5) Make a new sub-folder or sub application:
+
+python manage.py startapp employee_crud
+
+6) Make 2 new files: urls.py, forms.py in employee_crud folder
+
+7) Make a 2 new folders called templates => employee_crud
+
+8) Open settings.py in employee_app, Add the project name in this section:
+
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    # New app should be added here
+    'employee_crud'
+]
+
+9) Customize the models.py as per the employee details
+
+10) Customize the forms.py with a new model
+
+11) Make a 5 html files: templates/employee_crud
+
+12) Customize the employee_app/urls.py
+
+13) Customize the employee_crud/urls.py
+
+14) Customize the employee_crud/views.py
+
+15) Customize the 5 html files
