@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f6f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .content {
+            padding: 30px;
+            color: #333333;
+            line-height: 1.6;
+        }
+
+        .details-box {
+            background-color: #f8f9fa;
+            border-left: 4px solid #667eea;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+
+        .footer {
+            background-color: #f1f1f1;
+            color: #777777;
+            text-align: center;
+            padding: 15px;
+            font-size: 12px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>🎓 Enrollment Successful!</h2>
+        </div>
+        <div class="content">
+            <p>Dear <strong>{{ student_name }}</strong>,</p>
+            <p>Congratulations! You have been successfully enrolled in your chosen course at our Academy. We are
+                thrilled to have you join us.</p>
+
+            <div class="details-box">
+                <p style="margin: 0;"><strong>Course:</strong> {{ course_name }}</p>
+                <p style="margin: 5px 0 0 0;"><strong>Fee:</strong> ${{ course_fee }}</p>
+            </div>
+
+            <p>Your classes will begin soon. Please check your dashboard for further updates.</p>
+        </div>
+        <div class="footer">
+            &copy; 2026 Academy Management. All rights reserved.<br>
+            If you have any questions, reply to this email.
+        </div>
+    </div>
+</body>
+
+</html>

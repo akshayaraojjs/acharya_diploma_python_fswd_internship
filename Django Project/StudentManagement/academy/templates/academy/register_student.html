@@ -1,0 +1,47 @@
+{% extends 'academy/base.html' %}
+
+{% block title %}{% if is_update %}Update{% else %}Register{% endif %} Student{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center mt-5">
+    <div class="col-md-8 col-lg-6">
+        <div class="card shadow-lg">
+            <div class="card-header gradient-bg p-4 text-center">
+                <h3 class="mb-0">👨‍🎓 {% if is_update %}Update{% else %}Register New{% endif %} Student</h3>
+            </div>
+            <div class="card-body p-4">
+                <form method="post">
+                    {% csrf_token %}
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <label class="form-label text-muted fw-bold">First Name</label>
+                            {{ form.first_name }}
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label text-muted fw-bold">Last Name</label>
+                            {{ form.last_name }}
+                        </div>
+                        <div class="col-md-12">
+                            <label class="form-label text-muted fw-bold">Email Address</label>
+                            {{ form.email }}
+                        </div>
+                        <div class="col-md-12">
+                            <label class="form-label text-muted fw-bold">Phone Number</label>
+                            {{ form.phone }}
+                        </div>
+                        <div class="col-12 mt-4 text-center">
+                            <button type="submit" class="btn btn-gradient btn-lg w-100 rounded-pill shadow">
+                                {% if is_update %}
+                                Save Changes
+                                {% else %}
+                                Register Student
+                                {% endif %}
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

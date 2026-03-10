@@ -1,0 +1,31 @@
+{% extends 'academy/base.html' %}
+
+{% block title %}Confirm Delete{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center mt-5">
+    <div class="col-md-6">
+        <div class="card shadow-lg border-danger">
+            <div class="card-header bg-danger text-white p-3 text-center">
+                <h4 class="mb-0">⚠️ Confirm Delete</h4>
+            </div>
+            <div class="card-body p-4 text-center">
+                <p class="fs-5">Are you sure you want to delete the following {{ type }}?</p>
+                <div class="p-3 bg-light border rounded mb-4">
+                    <strong>{{ object }}</strong>
+                </div>
+                <p class="text-danger small mb-4">Warning: This action cannot be undone. Any related records might also
+                    be deleted (cascade).</p>
+
+                <form method="post">
+                    {% csrf_token %}
+                    <div class="d-flex justify-content-between">
+                        <a href="{% url cancel_url %}" class="btn btn-secondary px-4">Cancel</a>
+                        <button type="submit" class="btn btn-danger px-4 fw-bold">Yes, Delete</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
